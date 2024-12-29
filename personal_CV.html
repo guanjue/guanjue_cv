@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Guanjue Xiang - Computational Biology</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --background-color: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill-tag {
+            background: var(--secondary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .publication {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            section {
+                padding: 1rem;
+            }
+        }
+
+        .skill-category {
+            margin-bottom: 1.5rem;
+        }
+        .skill-category h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        header h1, header p {
+            color: white;
+            margin: 0.5rem 0;
+        }
+        
+        header .contact-info {
+            margin-top: 1rem;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            color: white;
+        }
+
+        .publication-figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dr. Guanjue Xiang</h1>
+        <div class="profile-photo">
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQEQ2A7CLFATnA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726680425615?e=1741219200&v=beta&t=Ms1Hw8EgSzgx1wbbUHATjpLIfmEDdw120MBIL7xZ5gg"
+                    alt="Guanjue Xiang"
+                    style="width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        margin: 2rem auto;
+                        display: block;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        </div>
+        <p>Senior Data Scientist | Computational Biology</p>
+        <div class="contact-info">
+            <span>📧 guanjuexiang@gmail.com</span>
+            <span>📍 Boston, MA</span>
+            <span><a href="https://scholar.google.com/citations?user=xL6hYI4AAAAJ&hl=en&oi=ao" style="color: white; text-decoration: none;">📚 Google Scholar</a></span>
+            <span><a href="https://github.com/guanjue" style="color: white; text-decoration: none;">🔗 GitHub</a></span>
+            <span><a href="https://x.com/Guanjue" style="color: white; text-decoration: none;">🐦 Twitter/X</a></span>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>I am a researcher with expertise in computational biology, machine learning, and genomics. My research focuses on developing innovative computational methods for analyzing complex biological data, particularly in epigenomics and gene regulation.</p>
+            
+            <p>My recent work includes developing machine learning systems for enhancer-promoter pair prediction and optimizing Anti-Sense Oligonucleotides design. I've published several high-impact papers in journals such as Nucleic Acids Research, Genome Research, and Nature Communications, with significant contributions to computational methods. My expertise spans from traditional statistical approaches to cutting-edge deep learning applications in genomics.</p>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <h3>Senior Data Scientist | CAMP4 Therapeutics Corporation</h3>
+            <p>Cambridge, MA | 2022 - Present</p>
+            <ul>
+                <li><strong>Enhancer-Promoter Pair Prediction:</strong>
+                    <ul>
+                        <li>Developed novel batch effect correction methods for multi-dimensional data normalization across cell-types/species</li>
+                        <li>Built machine learning systems using epigenetic features and Enformer LLM model, achieving 30% improvement over ABC score</li>
+                        <li>Applied single-cell Perturb-seq data for enhancer-promoter pair identification</li>
+                    </ul>
+                </li>
+                <li><strong>ASO Design Optimization:</strong>
+                    <ul>
+                        <li>Led development of Active Learning models for ASO chemical modification design, improving efficiency 10x</li>
+                        <li>Implemented SHAP analysis for interpreting ML models and biological mechanisms</li>
+                        <li>Developed pipelines using RNA-FM and DNABERT-2 models for sequence feature extraction</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Postdoctoral Research Fellow | Harvard T.H. Chan School of Public Health & Dana-Farber Cancer Institute</h3>
+            <p>Boston, MA | 2020 - 2022</p>
+            <p>Mentors: Dr. X. Shirley Liu and Dr. Jun Liu</p>
+            <ul>
+                <li><strong>Single-cell RNA-seq Analysis:</strong>
+                    <ul>
+                        <li>Developed ICA-based methods for single-cell RNA-seq data projection</li>
+                        <li>Created models for joint TAD identification from single-cell and multi-conditional chromatin data</li>
+                        <li>Analyzed immune-related gene modules and regulatory networks</li>
+                    </ul>
+                </li>
+                <li><strong>Interspecies Epigenomics:</strong>
+                    <ul>
+                        <li>Developed novel NMF-based approach for cross-species epigenetic profile comparison</li>
+                        <li>Identified conserved cis-regulatory elements across human and mouse</li>
+                        <li>Implemented TF binding prediction using DNA sequence and chromatin accessibility data</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Graduate Student Researcher | Pennsylvania State University</h3>
+            <p>University Park, PA | 2015 - 2020</p>
+            <p>Mentors: Dr. Yu Zhang and Dr. Ross C. Hardison</p>
+            <ul>
+                <li><strong>VISION Project Leadership:</strong>
+                    <ul>
+                        <li>Led data analysis for VISION consortium project on hematopoietic epigenomes</li>
+                        <li>Developed novel methods for cross-cell-type epigenomic data normalization</li>
+                        <li>Created models for cCRE identification and clustering</li>
+                        <li>Implemented Bayesian models for integrating multi-dimensional epigenomic data</li>
+                        <li>Discovered novel CTCF binding degradation dynamics through integrated analysis</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <h3>Ph.D. in Bioinformatics and Genomics</h3>
+            <p>Minor in Applied Statistics</p>
+            <p>Penn State University, 2015-2020</p>
+            <p>Thesis: Computational methods for analyzing chromatin dynamics and gene regulation</p>
+        </section>
+
+        <section>
+            <h2>Selected Publications</h2>
+            <div class="publication">
+                <p>Xiang, G., et al. (2024). "<a href="https://academic.oup.com/nar/article/52/2/e11/7459476" style="color: var(--secondary-color); text-decoration: none;">JMnorm: a novel joint multi-feature normalization method for integrative and comparative epigenomics.</a>" <i>Nucleic Acids Research</i> 52.2: e11-e11.</p>
+                <div class="publication-figure">
+                    <img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/nar/52/2/10.1093_nar_gkad1146/1/m_gkad1146figgra1.jpeg?Expires=1737616864&Signature=hgW-HK8EvQRSZUiPNtapodKapdEL5VLBemf1F9PpEmaTsrw9RWuOl1J65pNycWOhz~c4o9rMERIP65xxiFOGXbpozYuNPBNl514epenzcE~mPCVXifQPhVZgHDguezlRxXoItbMJ-aCtxUeDbUya5NzaaEgibjdpMIM-E~fPMF5PNMqq3RN4Ay8rphFhvhcNRD3LqXcL2idXWv63UVHNCnHqBPwEF92QQhsdGKUB8rCQ8fLR2Z12EbAYQP-IuAM5qYH2n~M3Yol21i62D0skOs4cU7SO06BAk~5UrEwlsrUgfOlwBsyYhfwpKlKFTco2oZ9sbnHWLjNQiJ2ohadwwQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA"
+                         alt="JMnorm method overview" 
+                         style="width: 100%; 
+                                max-width: 300px; 
+                                margin: 1rem 0; 
+                                border-radius: 5px; 
+                                box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <p style="font-size: 0.9rem; 
+                              color: #666; 
+                              margin-top: 0.5rem; 
+                              text-align: center;">
+                        Figure: Overview of the JMnorm method for joint multi-feature normalization
+                    </p>
+                </div>
+            </div>
+
+            <div class="publication">
+                <p>Xiang, G., et al. (2024). "<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11368181/" style="color: var(--secondary-color); text-decoration: none;">Interspecies regulatory landscapes and elements revealed by novel joint systematic integration of human and mouse blood cell epigenomes.</a>" <i>Genome Research</i>: gr-277950.</p>
+                <div class="publication-figure">
+                    <img src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e9e6/11368181/1f9f6af1dee0/1089f06.jpg" 
+                         alt="Interspecies regulatory landscapes" 
+                         style="width: 100%; 
+                                max-width: 300px; 
+                                margin: 1rem 0; 
+                                border-radius: 5px; 
+                                box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <p style="font-size: 0.9rem; 
+                              color: #666; 
+                              margin-top: 0.5rem; 
+                              text-align: center;">
+                        Figure: Interspecies regulatory landscapes and elements in human and mouse blood cells
+                    </p>
+                </div>
+            </div>
+
+            <div class="publication">
+                <p>Zhang, Y., Xiang, G., et al. (2023). "<a href="https://www.nature.com/articles/s41467-023-38333-8" style="color: var(--secondary-color); text-decoration: none;">MetaTiME integrates single-cell gene expression to characterize the meta-components of the tumor immune microenvironment.</a>" <i>Nature Communications</i> 14.1: 2634.</p>
+                <div class="publication-figure">
+                    <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-023-38333-8/MediaObjects/41467_2023_38333_Fig1_HTML.png?as=webp" 
+                         alt="Overview of MetaTiME" 
+                         style="width: 100%; 
+                                max-width: 300px; 
+                                margin: 1rem 0; 
+                                border-radius: 5px; 
+                                box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <p style="font-size: 0.9rem; 
+                              color: #666; 
+                              margin-top: 0.5rem; 
+                              text-align: center;">
+                        Figure: Overview of MetaTiME
+                    </p>
+                </div>
+            </div>
+            
+            <div class="publication">
+                <p>Luan, J., Xiang, G., et al. (2021). "<a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(21)00096-6" style="color: var(--secondary-color); text-decoration: none;">Distinct properties and functions of CTCF revealed by a rapidly inducible degron system.</a>" <i>Cell Report</i> 34.8: 108783.</p>
+                <div class="publication-figure">
+                    <img src="https://www.cell.com/cms/10.1016/j.celrep.2021.108783/asset/cb8c03de-be76-4812-8593-38c75c26398b/main.assets/gr1.jpg" 
+                         alt="Highly variable CTCF persistence on chromatin following auxin-mediated degradation" 
+                         style="width: 100%; 
+                                max-width: 300px; 
+                                margin: 1rem 0; 
+                                border-radius: 5px; 
+                                box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <p style="font-size: 0.9rem; 
+                              color: #666; 
+                              margin-top: 0.5rem; 
+                              text-align: center;">
+                        Figure: Highly variable CTCF persistence on chromatin following auxin-mediated degradation
+                    </p>
+                </div>
+            </div>
+
+            <div class="publication">
+                <p>Xiang, G., et al. (2023). "<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-023-05223-1" style="color: var(--secondary-color); text-decoration: none;">Snapshot: a package for clustering and visualizing epigenetic history during cell differentiation.</a>" <i>BMC Bioinformatics</i> 24.1: 102.</p>
+                <div class="publication-figure">
+                    <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs12859-023-05223-1/MediaObjects/12859_2023_5223_Fig1_HTML.png" 
+                         alt="Overview of Snapshot package workflow" 
+                         style="width: 100%; 
+                                max-width: 300px; 
+                                margin: 1rem 0; 
+                                border-radius: 5px; 
+                                box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <p style="font-size: 0.9rem; 
+                              color: #666; 
+                              margin-top: 0.5rem; 
+                              text-align: center;">
+                        Figure: Overview of Snapshot package workflow
+                    </p>
+                </div>
+            </div>
+
+            <div class="publication">
+                <p>Xiang, G., et al. (2021). "<a href="https://academic.oup.com/bioinformatics/article/37/18/3011/6157825" style="color: var(--secondary-color); text-decoration: none;">S3V2-IDEAS: a package for normalizing, denoising and integrating epigenomic datasets across different cell types.</a>" <i>Bioinformatics</i> 37.13: 1847-1849.</p>
+                <div class="publication-figure">
+                    <img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/37/18/10.1093_bioinformatics_btab148/2/m_btab148f1.jpeg?Expires=1738090206&Signature=IaESEmXo3f1t-xTjPGKf2qIEiIG4xAanAWqULHyEWWgcKGkCA~KvDtbMB4laVClra08EtzDhxRqTo5hXM0jzxzvgonL49ArWWcgUlKjA374ncuJcsDCjDwhUUgzXYYHTnPgu821UivItPIEAaPIWyo~6wZnMLEiGiZt7rVdytIiz~i-x-LBfCEtW~eQHdJDAxenspWwzMWXsOBkUh4zRsnKJaALQQw0MRIepIKJ2WeSLRJkIAKUQvOaseN7fRI8dRIQoOYepp11gF7DIj-cdyyftI0SaV81QYk9~dNNPSc~l~-HcRTBnDOUozrdK1nKBTgjbXWt4zNRciOj9h06Rvg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" 
+                         alt="Overview of Snapshot package workflow" 
+                         style="width: 100%; 
+                                max-width: 300px; 
+                                margin: 1rem 0; 
+                                border-radius: 5px; 
+                                box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <p style="font-size: 0.9rem; 
+                              color: #666; 
+                              margin-top: 0.5rem; 
+                              text-align: center;">
+                        Figure: Overview of S3V2-IDEAS package workflow
+                    </p>
+                </div>
+            </div>
+
+            <div class="publication">
+                <p>Xiang, G., Zhang, Y.*, Hardison, R.* (2020). "<a href="https://academic.oup.com/nar/article/48/8/e43/5747479" style="color: var(--secondary-color); text-decoration: none;">S3norm: simultaneous normalization of sequencing depth and signal-to-noise ratio in epigenomic data.</a>" <i>Nucleic Acids Research</i> 48.8: e43-e43.</p>
+                <div class="publication-figure">
+                    <img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/nar/48/8/10.1093_nar_gkaa105/1/m_gkaa105fig1.jpeg?Expires=1737615647&Signature=NdvhkcxnSzepS-RvLUop6CNRRM31vkyhRO-gL4AD-QgDWNWVDpxB4QP~n2mSDYzj4~-4DBbs1mQbYqreLRoYqYGO4pXYCuF01TFuiRc4ei8OcoqhOnKfEe4rUk0PezRMjVXQ-ihWudlE2muvAJ4mm5jFCXgtF6FroPXAfJIin1ABtNv1Tw2Oodyy8esFXbc0uDOr1UtxaSK~KnUIo7IObgCPmR0opW~OHnjPMQuaviq7dPrfc35kI3PNZh4aY4jd4LwmVo5bMoYe0YVSqiwvACGoJ~q4njnvB6~WKD1XyBN3XqwGo0Wp1~ARsf7pUNA1cBScIx~8180tY9LgI4SHXA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" 
+                         alt="Overview of S3norm method" 
+                         style="width: 100%; 
+                                max-width: 300px; 
+                                margin: 1rem 0; 
+                                border-radius: 5px; 
+                                box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <p style="font-size: 0.9rem; 
+                              color: #666; 
+                              margin-top: 0.5rem; 
+                              text-align: center;">
+                        Figure: Overview of S3norm method
+                    </p>
+                </div>
+            </div>
+
+            <div class="publication">
+                <p>Xiang, G., Keller, C., et al. (2020). "<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7111515/" style="color: var(--secondary-color); text-decoration: none;">An integrative view of the regulatory and transcriptional landscapes in mouse hematopoiesis.</a>" <i>Genome Research</i> 30.3: 472-484.</p>
+                <div class="publication-figure">
+                    <img src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/11b2/7111515/4cdfb0dcf466/472f02.jpg" 
+                         alt="Overview of mouse hematopoiesis regulatory landscape" 
+                         style="width: 100%; 
+                                max-width: 300px; 
+                                margin: 1rem 0; 
+                                border-radius: 5px; 
+                                box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <p style="font-size: 0.9rem; 
+                              color: #666; 
+                              margin-top: 0.5rem; 
+                              text-align: center;">
+                        Figure: Overview of mouse hematopoiesis regulatory landscape
+                    </p>
+                </div>
+            </div>
+
+            <div class="publication">
+                <p>Zeng, Q., Xiang, G., et al. "<a href="https://www.biorxiv.org/content/10.1101/2024.11.06.622323v1.abstract" style="color: var(--secondary-color); text-decoration: none;">JOnTADS: a unified caller for TADs and stripes in Hi-C data.</a>" <i>(Manuscript in submission)</i>.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <div class="skill-category">
+                    <h3>Data Preprocessing</h3>
+                    <span class="skill-tag">Data Normalization</span>
+                    <span class="skill-tag">Batch Correction</span>
+                    <span class="skill-tag">Feature Selection</span>
+                    <span class="skill-tag">Dimension Reduction</span>
+                    <span class="skill-tag">High-throughput Sequencing</span>
+                    <span class="skill-tag">LLM Sequence Embedding</span>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <span class="skill-tag">Random Forest</span>
+                    <span class="skill-tag">SVM</span>
+                    <span class="skill-tag">Deep Learning</span>
+                    <span class="skill-tag">Bayesian Optimization</span>
+                    <span class="skill-tag">Active Learning</span>
+                    <span class="skill-tag">SOTA Model Integration</span>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Clustering & Analysis</h3>
+                    <span class="skill-tag">K-means</span>
+                    <span class="skill-tag">Hierarchical Clustering</span>
+                    <span class="skill-tag">Gaussian Process</span>
+                    <span class="skill-tag">Autoencoder</span>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Model Interpretation</h3>
+                    <span class="skill-tag">PCA</span>
+                    <span class="skill-tag">UMAP</span>
+                    <span class="skill-tag">t-SNE</span>
+                    <span class="skill-tag">Matrix Factorization</span>
+                    <span class="skill-tag">Feature Importance</span>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">R</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
